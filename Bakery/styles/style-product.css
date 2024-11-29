@@ -1,0 +1,496 @@
+/* Tipografías y paleta de colores */
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #fefae0;
+    color: #6b705c;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #d4a373;
+    padding: 10px 0;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.menu li a i {
+    margin-right: 8px;
+}
+
+.menu li a:hover {
+    color: #ffe8d6;
+}
+
+/* Banner */
+.header-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+    
+}
+
+.banner-img {
+    width: 100%;
+    height: 50%;
+    filter: brightness(0.7);
+}
+
+.header-banner h1 {
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 48px;
+    font-weight: 700;
+}
+
+.header-banner .slogan {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 24px;
+    font-weight: 400;
+}
+
+
+.servicios {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+}
+
+.servicios h2 {
+    font-size: 36px;
+    color: #6b705c;
+    margin-bottom: 40px;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.servicio {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 23%;
+    transition: transform 0.3s;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+.servicio i {
+    font-size: 40px;
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    font-size: 24px;
+    color: #6b705c;
+    margin-bottom: 15px;
+}
+
+.servicio p {
+    font-size: 16px;
+    color: #8d99ae;
+}
+
+/* Estilos para la sección del producto */
+.producto-detalle {
+    padding: 70px;
+    background-color: #f8f9fa;
+}
+
+.product-container {
+    display: flex;
+    align-items: center; /* Alinea verticalmente la imagen y el texto */
+    flex-direction: row; /* Asegura que los elementos estén uno al lado del otro */
+    margin-bottom: 60px;  /* Más espacio en la parte inferior */
+    width: 90%;  /* Ocupa más espacio en la pantalla */
+    margin: 0 auto;  /* Centra el contenido */
+}
+
+.product-image img {
+    max-width: 90%;  /* Ajusta el tamaño para que ocupe la mitad del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    border-radius: 15px;  /* Borde redondeado para un look más moderno */
+}
+
+.product-details {
+    margin-left: 40px;  /* Mayor espacio entre la imagen y los detalles */
+    flex-grow: 1;  /* Ocupa el espacio restante */
+}
+
+.product-details h1 {
+    font-size: 3em;  /* Agranda el título */
+}
+
+.description {
+    margin: 20px 0;
+    font-size: 1.5em;  /* Agranda la descripción */
+}
+
+.price {
+    font-size: 2em;  /* Agranda el precio */
+    color: #d4a373;
+}
+
+.cantidad-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 10px 0;
+}
+
+.cantidad-btn {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 10px 20px;  /* Agranda los botones de cantidad */
+    font-size: 20px;  /* Ajusta el tamaño de la fuente */
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+.cantidad-btn:hover {
+    background-color: #bc6c25;
+}
+
+.cantidad {
+    width: 60px;  /* Agranda el campo de cantidad */
+    text-align: center;
+    font-size: 20px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+}
+
+.suggestions {
+    margin-top: 40px;
+    text-align: center;
+}
+
+.suggestions h2 {
+    font-size: 2em;  /* Agranda el texto del título */
+    margin-bottom: 30px;
+}
+
+.suggestion-item {
+    display: inline-block;
+    margin: 20px;
+    text-align: center;
+}
+
+.suggestion-item img {
+    max-width: 100%;  /* Ajusta el tamaño para que ocupe la mitad del contenedor */
+    height: auto;  /* Mantiene la proporción de la imagen */
+    border-radius: 15px;  /* Borde redondeado */
+}
+
+.suggestion-item p {
+    font-size: 1.2em;
+    color: #6b705c;
+}
+
+.suggestion-item .precio {
+    font-size: 1.5em;
+    color: #d4a373;
+    margin-top: 5px;
+}
+
+
+/* Ajuste para los botones de sabor */
+.sabores {
+    margin: 20px 0;
+    font-size: 1.2em;  /* Agranda el texto de sabores */
+}
+
+.sabor-btn {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 10px 20px;  /* Agranda los botones */
+    font-size: 16px;
+    cursor: pointer;
+    margin-right: 10px;
+    border-radius: 5px;
+}
+
+.sabor-btn:hover {
+    background-color: #bc6c25;
+}
+
+/* Estilos de los productos sugeridos */
+.suggestion-item {
+    display: inline-block;
+    margin: 10px;
+    text-align: center;
+}
+
+.suggestion-item img {
+    max-width: 150px;
+    border-radius: 10px;
+}
+
+.suggestion-item .precio {
+    font-size: 1.2em;
+    color: #d4a373;
+    margin-top: 5px;
+}
+
+/* Sección de productos */
+.productos-destacados {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+.productos-destacados h2 {
+    text-align: center;
+    font-size: 36px;
+    margin-bottom: 30px;
+    color: #6b705c;
+}
+
+.productos-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+}
+
+.producto {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    text-align: center;
+    width: 30%;
+    margin-bottom: 30px;
+    transition: transform 0.3s;
+}
+
+.producto:hover {
+    transform: scale(1.05);
+}
+
+.producto img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+.producto h3 {
+    font-size: 24px;
+    color: #6b705c;
+    margin-top: 15px;
+}
+
+.producto p {
+    font-size: 16px;
+    color: #8d99ae;
+}
+
+.producto .precio {
+    font-size: 22px;
+    color: #d4a373;
+    font-weight: bold;
+}
+.producto-link {
+    text-decoration: none; 
+}
+
+button.agregar-carrito {
+    background-color: #d4a373;
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: pointer;
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color 0.3s;
+}
+button.no-disponible {
+    background-color: #ccc;  
+    color: #666;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    cursor: not-allowed;  /* nonon */
+    margin-top: 10px;
+    border-radius: 5px;
+    transition: background-color;
+}
+
+button.agregar-carrito:hover {
+    background-color: #bc6c25;
+}
+
+/* Sección del carrito */
+aside.carrito {
+    background-color: #fefae0;
+    padding: 20px;
+    position: fixed;
+    top: 100px;
+    right: 20px;
+    width: 250px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+}
+
+aside.carrito h3 {
+    font-size: 18px;
+}
+.cantidad-container {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start; /* Ajustar la alineación a la izquierda */
+    margin: 20px 0;
+ }
+ .cantidad-btn {
+    background-color: #d4a373;
+    color: white;
+    border: none;
+    padding: 10px 20px;  /* Agranda los botones de cantidad */
+    font-size: 20px;  /* Ajusta el tamaño de la fuente */
+    cursor: pointer;
+    border-radius: 5px;
+ }
+.cantidad-btn:hover {
+    background-color: #bc6c25;
+ }
+ .cantidad {
+    width: 40px;
+    text-align: center;
+    font-size: 18px;
+    border: 1px solid #ddd;
+    margin: 0 10px;
+    border: none;          /* Sin borde */
+    background: none;       /* Sin fondo */
+    outline: none;          /* Sin borde al hacer clic */
+        /* Para que el número se vea más destacado */
+    color: #6b705c;    
+}    
+
+footer {
+    background-color: #d4a373;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-contacto p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #d4a373;
+}
+/* Estilo para el menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Ocultar el menú normal en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Ocultar menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff; /* Fondo blanco */
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el menú */
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu li a {
+        color: #333; /* Color del texto */
+        font-size: 18px; /* Tamaño del texto */
+        text-decoration: none;
+        display: block;
+        width: 100%;
+    }
+
+    /* Mostrar el ícono de menú hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Mostrar el menú cuando esté activo */
+.menu.show {
+    display: flex; /* Mostrar menú desplegable */
+}

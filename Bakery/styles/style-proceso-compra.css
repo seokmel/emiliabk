@@ -1,0 +1,418 @@
+/* Tipografías y paleta de colores */
+
+@font-face {
+    font-family: 'Louis George Cafe Light';
+    src: url(./styles/tipografia/Louis\ George\ Cafe\ Light.ttf) format('truetype');
+    }
+
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #f8f9fb;
+    color: #6b705c;
+    margin: 0;
+    padding: 0;
+}
+
+/* Encabezado */
+.main-header {
+    background-color: #d4a373;
+    padding: 10vm 0;
+    
+}
+
+.navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 40px;
+    
+}
+
+.menu {
+    list-style: none;
+    display: flex;
+    gap: 20px;
+}
+
+.menu li {
+    display: inline;
+}
+
+.menu li a {
+    text-decoration: none;
+    color: #ffffff;
+    font-weight: 600;
+    font-size: 21px;
+}
+
+.menu li a i {
+    margin-right: 8px;
+}
+
+.menu li a:hover {
+    color: #ffe8d6;
+}
+
+/* Banner */
+.header-banner {
+    position: relative;
+    text-align: center;
+    color: white;
+}
+
+.banner-img {
+    width: 100%;
+    height: 50%;
+    filter: brightness(0.5);
+}
+
+.header-banner .titulo1 {
+    position: absolute;
+    top: 20%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 70px;
+    font-weight: 900;
+}
+
+.header-banner .titulo2 {
+    position: absolute;
+    top: 35%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-size: 75px;
+    font-weight: 700;
+}
+
+.header-banner .slogan {
+    position: absolute;
+    top: 55%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    font-family: 'Louis George Cafe Light', sans-serif;
+    font-size: 26px;
+    font-weight: 400;
+}
+
+.servicios {
+    background-color: #f8f9fa;
+    padding: 50px 20px;
+    text-align: center;
+    text-decoration: none;
+}
+.servicio a{ 
+    text-decoration: none;
+}
+
+.servicios h2 {
+    font-size: 36px;
+    color: #6b705c;
+    margin-bottom: 40px;
+}
+
+.servicios-container {
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.servicio {
+    background-color: #ffffff;
+    border-radius: 10px;
+    box-shadow: 0px 4px 6px rgba(0,0,0,0.1);
+    padding: 20px;
+    width: 23%;
+    transition: transform 0.3s;
+    text-decoration: none;
+}
+
+.servicio:hover {
+    transform: scale(1.05);
+}
+
+.servicio i {
+    font-size: 40px;
+    color: #d4a373;
+    margin-bottom: 15px;
+}
+
+.servicio h3 {
+    font-size: 24px;
+    color: #6b705c;
+    text-decoration: none;
+}
+
+.servicio p {
+    font-size: 16px;
+    color: #8d99ae;
+}
+
+/* Sección de productos */
+.productos-destacados {
+    padding: 50px;
+    background-color: #f8f9fa;
+}
+
+#checkout-summary, .checkout-form-container {
+    background-color: #fff8f0;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    max-width: 600px;
+    margin: 20px auto;
+    font-family: 'Montserrat', sans-serif;
+}
+
+button {
+    background-color: #3e3e3e;
+    color: white;
+    padding: 10px 20px;
+    font-size: 18px;
+    border: none;
+    cursor: pointer;
+    border-radius: 5px;
+}
+
+button:hover {
+    background-color: #d4a373;
+}
+.hidden {
+    display: none;
+}
+
+
+/* Estilos específicos para campos bancarios */
+#bank-details {
+    margin-top: 15px;
+}
+
+label, input[type="text"] {
+    display: block;
+    margin: 10px 0;
+    font-size: 16px;
+    color: #6b705c;
+}
+
+input[type="text"] {
+    padding: 8px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+    width: calc(100% - 16px);
+    box-sizing: border-box;
+}
+footer {
+    background-color: #d4a373;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+    font-size: 14px;
+}
+
+.footer-content {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 15px;
+}
+
+.footer-logo img {
+    margin-bottom: 10px;
+}
+
+.footer-contacto p {
+    margin: 5px 0;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+.footer-links a:hover {
+    text-decoration: underline;
+}
+
+.footer-social a {
+    color: #ffffff;
+    font-size: 20px;
+    margin: 0 10px;
+}
+
+.footer-social a:hover {
+    color: #d4a373;
+}
+/* Ajuste de logo y navbar para pantallas pequeñas */
+@media (max-width: 768px) {
+    .navbar {
+        flex-direction: column;
+        align-items: flex-start;
+        padding: 10px 20px;
+    }
+
+    .logo img {
+        width: 100px; /* Reducción del logo */
+    }
+
+    .menu {
+        flex-direction: column;
+        gap: 10px;
+    }
+
+    .menu li a {
+        font-size: 16px; /* Tamaño del texto */
+    }
+}
+
+/* Encabezado y banner */
+@media (max-width: 768px) {
+    .header-banner .titulo1, .header-banner .titulo2 {
+        font-size: 40px; /* Reducción de título */
+        text-align: center;
+    }
+
+    .header-banner .slogan {
+        font-size: 18px;
+    }
+    
+    .banner-img {
+        height: auto;
+    }
+}
+
+/* Sección de servicios */
+@media (max-width: 768px) {
+    .servicios-container {
+        flex-direction: column;
+        align-items: center;
+        padding: 0 20px;
+    }
+
+    .servicio {
+        width: 90%; /* Ancho completo */
+    }
+}
+
+/* Sección de productos */
+@media (max-width: 768px) {
+    .productos-container {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .producto {
+        width: 90%; /* Ancho completo */
+        margin-bottom: 20px;
+    }
+    
+    .cantidad-container {
+        justify-content: center; /* Centrando la cantidad */
+    }
+}
+
+/* Carrito */
+@media (max-width: 768px) {
+    aside.carrito {
+        width: 100%; /* Ancho completo */
+        position: static;
+        margin-top: 20px;
+    }
+}
+
+/* Footer */
+@media (max-width: 768px) {
+    .footer-content {
+        padding: 20px;
+        text-align: center;
+    }
+}
+/* Estilo para el menú hamburguesa */
+.menu-toggle {
+    display: none; /* Oculto por defecto */
+    font-size: 24px;
+    cursor: pointer;
+    color: #333;
+}
+
+/* Ocultar el menú normal en pantallas pequeñas */
+@media (max-width: 768px) {
+    .menu {
+        display: none; /* Ocultar menú por defecto */
+        flex-direction: column;
+        position: absolute;
+        top: 70px;
+        right: 0;
+        background-color: #fff; /* Fondo blanco */
+        width: 100%;
+        z-index: 1000;
+        box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Sombra para resaltar el menú */
+    }
+
+    .menu li {
+        text-align: center;
+        padding: 15px 0;
+        border-bottom: 1px solid #ddd;
+    }
+
+    .menu li a {
+        color: #333;
+        font-size: 18px; 
+        text-decoration: none;
+        display: block;
+        width: 100%;
+    }
+
+    /* Mostrar el ícono de menú hamburguesa */
+    .menu-toggle {
+        display: block;
+    }
+}
+
+/* Mostrar el menú cuando esté activo */
+.menu.show {
+    display: flex; /
+}
+
+/* Paginacion de actualizar producto */
+.pagination {
+    margin-top: 20px;
+    text-align: center;
+}
+
+.pagination a {
+    padding: 8px 15px;
+    text-decoration: none;
+    border: 1px solid #d4a373; 
+    color: #ffffff; /* Texto de color marrón suave (que es uno de los colores primarios) */
+    background-color: #d4a373; /* Fondo suave rosado */
+    border-radius: 5px;
+    margin: 0 5px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.pagination a:hover {
+    background-color: #bc6c25; /* Fondo rosado más intenso */
+    color: #fff; /* Texto blanco */
+    border-color: #bc6c25; /* Borde rosado más fuerte */
+}
+
+.pagination a[style="font-weight: bold;"] {
+    background-color: #bc6c25; /* Fondo más fuerte en la página activa */
+    color: white; /* Texto blanco en la página activa */
+    cursor: not-allowed;
+    border-color: #bc6c25;
+}
+
+.pagination .disabled {
+    color: #e0e0e0; /* Color más gris para los botones deshabilitados */
+    cursor: not-allowed;
+}
+
+.pagination a:focus {
+    outline: none; /* Elimina el borde por defecto al hacer click */
+    box-shadow: 0 0 0 2px rgba(255, 105, 180, 0.6); /* Sombra suave para dar énfasis */
+}
